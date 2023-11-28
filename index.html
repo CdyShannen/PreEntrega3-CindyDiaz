@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Kdam+Thmor+Pro&family=Roboto&family=Roboto+Condensed:ital,wght@0,300;0,700;1,300;1,700&display=swap"
+        rel="stylesheet">
+    <script src="./js/main.js" defer></script>
+</head>
+
+<body>
+    <div class="section-todo-list">
+        <h2>Lista De Tareas</h2>
+        <div class="input-btn">
+            <input type="text">
+            <button onclick="addTasks()">Añadir Tarea</button>
+        </div>
+        <div class="list-tasks">
+            <ul>
+                <li>Tarea a realizar<span>X</span></li>
+                <li>Tarea a realizar<span>X</span></li>
+                <li>Tarea a realizar<span>X</span></li>
+                <li>Tarea a realizar<span>X</span></li>
+            </ul>
+        </div>
+        <button class="remove-all" onclick="deleteAll()">Eliminar Todo</button>
+    </div>
+    <footer>
+        <p class="author">🪐 by <a href="https://github.com/garu2" target="_blank">Cindy Shannen Diaz</a></p>
+    </footer>
+</body>
+
+</html>
