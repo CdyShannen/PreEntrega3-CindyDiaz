@@ -15,7 +15,7 @@ function eventListeners() {
   listTasks.addEventListener("click", deleteTask);
 }
 
-//Funcion para eliminar con el click
+//Funcion para eliminar item con el click
 function deleteTask(e) {
   if (e.target.tagName == "SPAN") {
     const deleteId = parseInt(e.target.getAttribute("task-id"));
@@ -82,7 +82,6 @@ function showError(error) {
   messageError.classList.add("error");
 
   message.appendChild(messageError);
-  //console.log(error);
   setTimeout(() => {
     messageError.remove();
   }, 2000);
